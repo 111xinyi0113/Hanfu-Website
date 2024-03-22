@@ -1,0 +1,412 @@
+
+  
+  /*主体 */
+.main-content {
+    padding: 2em 0; padding-bottom:0; 
+}
+h3.tittle,h2.tittle {
+    background-color: #bddbe0;
+    padding: 0.8em 1em;
+    color:#E3E8E2;
+    text-transform: uppercase;
+	border-radius: 15px; /* 方块圆角 */
+    font-size: 1.1em;
+	margin-bottom: 1em;
+	text-align: left;
+}
+h3.tittle i,h2.tittle i {
+    color:#E3E8E2;
+    font-size: 1em;
+    margin-right: 0.5em;
+    vertical-align: baseline;
+}
+.text-muted {
+    color: #ffffff;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 0em 0 1em;
+	list-style: none;
+	text-align: center;
+}
+.grid figure {
+	position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 358px;
+    max-width: 415px;
+    max-height: 340px;
+    width: 48%;
+}
+figcaption h4 {
+    font-size: 1em;
+    color: #F8DA56;
+    margin: 0;
+	text-transform:capitalize;
+}
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h4 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h4 span {
+	margin: .2em 0 0;
+    display: block;
+    font-size: .6em;
+    color: #fff;
+}
+
+.grid figure h4,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-layla {
+	    background: #282828;
+}
+a.wd {
+    font-size: 1.2em;
+    color: #2479A9;
+    display: inline-block;
+    margin: 1em 0 0;
+	text-align:center;
+	width:100%;
+	text-decoration: none;
+}
+
+figure.effect-layla figcaption {
+	padding: 3em;
+}
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+}
+
+figure.effect-layla figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+figure.effect-layla h4 {
+	padding-top:35%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-o-transition: transform 0.35s;
+	-moz-transition: transform 0.35s;
+	-ms-transition: transform 0.35s;
+}
+
+figure.effect-layla p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+	-o-transform: translate3d(0,-10px,0);
+	-moz-transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla h4 {
+}
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-o-transition: transform 0.35s;
+	-moz-transition: transform 0.35s;
+	-ms-transition: transform 0.35s;
+}
+
+figure.effect-layla:hover img {
+	opacity: 0.7;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-o-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+}
+
+figure.effect-layla:hover h4,
+figure.effect-layla:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h4,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+	-o-transition: transform 0.15s;
+	-moz-transition: transform 0.15s;
+	-ms-transition: transform 0.15s;
+}
+.m-b img {
+    width: 100%;
+}
+.m-b {
+    padding: 0;
+}
+.mag-bottom {
+    margin-top: 4em;
+}
+h3.tittle.bottom {
+    width: 98.5%;
+}
+.m-b-text {
+    text-align: center;
+    padding: 0.5em;
+    color:#DF3A01;
+}
+.m-b-text p {
+    font-size: 0.9em;
+    color:#DF3A01;
+    line-height: 1.8em;
+    margin: 0.6em 0;
+}
+.world-news-grids.fsh {
+    margin-top: 1em;
+}
+a.read {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: .5em 1.5em;
+    display: inline-block;
+    margin: 1em 0 2em;
+	text-align:center;
+    background:#5d98a6;
+	transition:.5s all;
+	border-radius: 5px; /* 方块圆角 */
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+}
+a.read:hover {
+	background:#bddbe0;
+	color:#333;
+}
+a.order {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #fff;
+	border-radius: 5px; /* 方块圆角 */
+    padding: .5em 1.5em;
+    display: inline-block;
+    margin: 1em 0 2em;
+    background:#5d98a6;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+}
+a.order:hover {
+	background:#bddbe0;
+	color:#333;
+}
+.shopsort{
+	border:#666 1px solid;padding:1em; margin-bottom:1em;width: 98.5%;
+	}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #5d98a6;
+}
+
+@media (max-width:1024px){
+	.grid figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 10px 1%;
+		min-width: 295px;
+		max-width: 270px;
+		max-height: 172px;
+		width: 48%;
+	}
+	figure.effect-layla h4 {
+    padding-top: 11%;
+	}
+	.m-b {
+		width: 33%;
+		float: left;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	.grid figure figcaption, .grid figure figcaption > a {
+		font-size: 1em;
+	}
+	figure.effect-layla figcaption {
+		padding: 5em 3em;
+	}
+	a.read {
+		margin: 1em 0 0em;
+	}
+}
+@media (max-width:768px){
+	.grid figure {
+		min-width: 225px;
+		max-height: 160px;
+	}
+	figure.effect-layla figcaption {
+		padding: 5em 0em;
+	}
+}
+@media (max-width:667px){
+	.grid figure {
+		min-width: 200px;
+		max-height: 140px;
+	}
+}
+@media (max-width:640px){
+	.grid figure {
+		min-width: 180px;
+		max-height: 123px;
+	}
+	figure.effect-layla figcaption {
+		padding: 3em 0em;
+	}
+	figure.effect-layla figcaption::before {
+		top: 20px;
+		right: 10px;
+		bottom: 20px;
+		left: 10px;
+	}
+	figure.effect-layla figcaption::after {
+		top: 20px;
+		right: 10px;
+		bottom: 20px;
+		left: 10px;
+	}
+	a.bull1 {
+		font-size: 1.4em;
+	}
+	figcaption h4 {
+		font-size: 1.3em;
+	}
+}
+@media (max-width:480px){
+	.grid figure {
+		margin: 0;
+		min-width: 346px;
+		max-width: 306px;
+		max-height: 204px;
+	}
+	.m-b {
+    width: 80%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+}
+@media (max-width: 414px){
+	.grid figure {
+		min-width: 292px;
+	}
+}
+@media (max-width:320px){
+	.grid figure {
+		margin: 10px 1%;
+		min-width: 268px;
+		max-width: 306px;
+		max-height: 154px;
+		width: 48%;
+	}
+}
+.panel-default > .panel-heading {
+    color: #F8DA56;
+    background-color: #222222;
+    border-color: #ddd;
+}.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #ff710a;
+    border-color: #ff710a;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+}

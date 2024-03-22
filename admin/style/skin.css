@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #right_cont {
+    background: rgba(255, 255, 255, 0.5); /* 更改为半透明 */
+    padding: 20px; /* 减少内边距大小 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px; /* 减小宽度 */
+    height: auto; /* 自动高度 */
+    box-sizing: border-box; /* 确保边框和内边距不会增加宽度 */
+    margin: auto;
+  }
+  
+  h4 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #form {
+    text-align: center; /* 新增：确保表单内容居中 */
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%; /* 输入框和按钮占满整个容器宽度 */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box; /* 新增：确保边框和内边距不影响宽度 */
+  }
+  
+  input[type="submit"] {
+    background-color: #7b7282;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #B9ABC4;
+  }
+  
+  .bt {
+    text-align: center; /* 确保按钮文字居中 */
+  }
+  
